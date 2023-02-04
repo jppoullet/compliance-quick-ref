@@ -1,0 +1,60 @@
+<html>
+	<head>
+		<title>Compliance Quick Reference</title>
+
+	</head>
+	<body style="background-color:#c5c7c9">
+		<iframe style="border:none; position:fixed; top:0px; right:1px" src="main.html" height="100%" width="79%" align="right" name="howtos"></iframe>
+		<h1>26 days from today is:</h1>
+		<p id="discoDate"></p>
+		<script>
+			const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+			var date = new Date();
+			var base = new Date();
+			console.log(date);
+			console.log(base);
+			date.setDate(base.getDate() + 26);
+			console.log(date);
+			document.getElementById("discoDate").innerHTML = " " + months[date.getMonth()] + " " + date.getDate() + ", " + date.getFullYear();
+		</script>
+		<h1><a href="main.html" target="howtos">Tools and Notes</a></h1>
+		<h1>How to documents</h1>
+		<h3><a href="\\mwrfnp01\shared$\MWR CC Employees\2020\Credit Services\Compliance\How-To\" target="howtos">All How Tos (How-To Folder)</a></h3>
+		<h2>All Billers</h2>
+		<ul style="list-style: none;"><li><h4><a href="ACP/ACPMain.html" target="howtos">ACP Day 76 - Notes and how-tos</a></h4></li>
+			<li><a href="All Billers/High Balance/High Balance Review.pdf" target="howtos">High Balance Handling</a></li>
+		</ul>
+		<h2><a href="ICOMS/ICOMSMain.html" target="howtos">ICOMS</a></h2>
+		<ul>
+			<li><a href="ICOMS/Change Customer Type.pdf" target="howtos">Change Customer Type</a></li>
+		</ul>
+		<h4>Open DI</h4>
+		<ul>
+			<li><a href="ICOMS/OpenDI/openDiHowTo.html" target="howtos">Open DI How-To</a></li>
+		</ul>
+		<h4>EBB downgrades</h4>
+		<ul>		
+			<!--<li><a href="ICOMS/EBBDowngrades/ICOMS EBB 76 Day HSD Only Downgrade.pdf" target="howtos">EBB 76 Day - HSD Only Downgrade</a></li>-->
+			<li><a href="ICOMS/EBBDowngrades/ICOMS EBB 76 Downgrades - Single, Double, Triple 1.pdf" target="howtos">EBB 76 Day - Single, Double Triple Play</a></li>
+		</ul>
+		<h2><a href="CSG/CSGMain.html" target="howtos">CSG</a></h2>
+		<h4>EBB Downgrades</h4>
+		<ul>
+			<li><a href="CSG/EBBDowngrades/CSG - HSD Only - EBB Downgrade 76 Day.pdf" target="howtos">EBB 76 Day - Single, Double Triple Play Processes</a></li>
+		</ul>
+		<h4>Open DI</h4>
+		<ul>
+			<li><a href="CSG/OpenDI/CSG Open DI How-To.pdf" target="howtos">Open DI How-To</a></li>
+		</ul>
+		<h4>LOB Unservicable</h4>
+		<ul>
+			<li><a href="CSG/LOB Unserviceable/LOB Unserviceable.pdf" target="howtos">Clear LOB Unserviceable Error</a></li>
+		</ul>
+		
+		<h3>Special Handling</h3>
+		<ul>
+			<li><a href="dunningGroupList.html" target="howtos">Dunning Group list</a></li>
+		</ul>
+		<h3>Standardized emails</h3>
+	</body>
+</html>

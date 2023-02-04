@@ -1,0 +1,241 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<title>Quick Reference - Credit Services - Compliance</title>
+		<script type="text/javascript">
+			function changeText2(){
+				var userInput = document.getElementById('userInput').value;
+				var lnk = document.getElementById('lnk');
+				window.open("https://tms.corp.chartercom.com/Task/DetailRO/" + userInput);
+			}
+			function changeText3(){
+				var userInput = document.getElementById('userInput2').value;
+				var lnk = document.getElementById('lnk2');
+				window.open("https://issuetrak.twcable.com/SPA/#/issue/update/" + userInput);
+			}
+		</script>
+		<link rel="stylesheet" href="CSS/style.css">
+	</head>
+	<body style="background-color:#f5f5f5">
+		<h1>Credit Services Compliance - Tools Reference Site</h1>
+		<p>This file can be found at \\mwrfnp01\shared$\MWR CC Employees\2022\Credit Services\Compliance\Quick-Refrence site\index.html</p>
+		<h2>Tools and useful links</h2>
+		<table id="tools">
+			<tr>
+				<th>General links</th>
+				<td><a target="_blank" href="https://panorama.charter.com/">Panorama</a></td>
+				<td><a target="_blank" href="https://panorama.charter.com/app/kronos.html">Kronos</a></td>
+				<td><a target="_blank" href="https://sharepoint.charter.com/corp/TWCPaymentServices/Compliance/Forms/AllItems.aspx?RootFolder=%2Fcorp%2FTWCPaymentServices%2FCompliance%2FAudit%20Team&FolderCTID=0x01200014CBD2457C39FB4D923CD499D4EE2055&View=%7B13FBFD42-4E23-4EA5-9443-A916316022E3%7D#InplviewHash13fbfd42-4e23-4ea5-9443-a916316022e3=FolderCTID%3D0x01200014CBD2457C39FB4D923CD499D4EE2055-RootFolder%3D%252Fcorp%252FTWCPaymentServices%252FCompliance%252FAudit%2520Team-SortField%3DLinkFilename-SortDir%3DAsc">TARRMS</a></td>
+				<td><a target="_blank" href="https://panorama.charter.com/content/panorama/en/app/talent-center.html">Talent Center</a></td>
+			</tr>
+			<tr />
+			<tr>
+				<td></td>
+				<td><a target="_blank" href="https://uxid.corp.chartercom.com/">Agent Lookup (UXID)</a></td>
+				<td><a target="_blank" href="https://etsl1.twcable.com/whiteboard">Outage Board (Whiteboard)</a></td>
+				<td><a target="_blank" href="https://charterukm.custhelp.com/">Co-Pilot</a></td>
+				<td />
+			</tr>
+			<tr>
+				<th>Ticketing Systems</th>
+				<td><a target="_blank" href="https://tms.corp.chartercom.com/Dashboard">TMS</a><br>
+					<input type='text' id='userInput' value=' ' />
+					<input type='button' onclick='changeText2()' value='Search TMS'>
+				</td>
+				<td><a target="_blank" href="https://issuetrak.twcable.com/SPA/#/issue/customer/find">UCM</a><br />
+					<input type='text' id='userInput2' value=' ' />
+					<input type='button' onclick='changeText3()' value='Search UCM'>
+				</td>
+				<td><a target="_blank" href="https://jira.charter.com/secure/Dashboard.jspa">JIRA</a></td>
+				<td><a target="_blank" href="https://ecaf.spctrm.net/index.html">ECAF</a></td>
+			</tr>
+			<tr />
+			<tr>
+				<td></td>
+				<td><a target="_blank" href="https://cars-web-usr.corp.chartercom.com/arsys/shared/login.jsp?/arsys/">ATG-Remedy</a></td>
+				<td><a target="_blank" href="https://csoc.corp.chartercom.com/issuesubmitter/IssueSubmit.aspx">Comms Desk Issue submit</a></td>
+				<td />
+				<td />
+			</tr>
+			<tr>
+				<th>Equipment activation and detail</th>
+				<td><a target="_blank" href="https://scope.charter.com/#/login">Scope</a></td>
+				<td><a target="_blank" href="https://agent-os.prod.portal.charter.com/">Agent OS</a></td>
+				<td><a target="_blank" href="https://sdpbpstools.charter.com/bps/omp_tools/Login_form.php?tcode=devdt&1645709930">BPS</a></td>
+				<td><a target="_blank" href="https://devicemgmt.rr.com/admin/login.html">Device Management (Limited Access)</a></td>
+			</tr>
+			<tr />
+			<tr>
+				<td />
+				<td><a target="_blank" href="https://sdpsat.charter.com/">SAT Tool</a></td>
+				<td />
+				<td />
+				<td />
+			</tr>
+			<tr>
+				<th>Phone related tools</th>
+				<td><a target="_blank" href="https://sdpeosm.charter.com/OrderManagement/Login.jsp">OSM</a></td>
+				<td><a target="_blank" href="https://numbering.neustar.biz/login">Neustar(portPS)</a></td>
+				<td />
+				<td />
+			</tr>
+		</table>
+		<div class="row">
+		<div class="column">
+			<h2>Standardized Order Reasons and Notes</h2>
+			<table id="standardOrders">
+				<tr>
+					<th>Job Type</th>
+					<th>Order Reason Code</th>
+					<th>Standardized Note</th>
+				</tr>
+				<tr>
+					<td>Standard Non-pay</td>
+					<td>Z8</td>
+					<td>**Compliance Entered Non-pay $</td>
+				</tr>
+				<tr>
+					<td>CLEC Non-pay</td>
+					<td>ON</td>
+					<td>**Compliance Entered CLEC Non-pay $</td>
+				</tr>
+				<tr>
+					<td>High Balance</td>
+					<td>Z8</td>
+					<td>**Compliance Entered HB Non-pay $<br />**Compliance Entered HB CLEC NP $</td>
+				</tr>
+				<tr>
+					<td>Low Balance</td>
+					<td>----</td>
+					<td>**Compliance re-aged $<br />**Compliance Issued 1-time ADJ $</td>
+				</tr>
+				<tr>
+					<td>EBB Downgrade</td>
+					<td>Z5</td>
+					<td>COMPLIANCE: Account is part of EBB program. This delinquent account has had Internet downgraded within EBB credit amount. Customer must pay delinquent balance to add Video, Voice, or upgrade Internet. Refer to GEN8501</td>
+				</tr>
+				<tr>
+					<td>OPEN DI (And DI-current)</td>
+					<td>----</td>
+					<td>COMPLIANCE BACKLOG: COMPLETE PENDING DISCO<br /><br />**Compliance: Attempted reflow to close order**</td>
+				</tr>
+				<tr>
+					<td>OPEN NP</td>
+					<td>----</td>
+					<td>COMPLIANCE BACKLOG: COMPLETE PENDING DISCO<br /><br />**Compliance: Attempted reflow to close order**</td>
+				</tr>
+				<tr>
+					<td>Protection Review</td>
+					<td>----</td>
+					<td>COMPLIANCE: PROTECTION REVIEW - CANCELED NPD (put reason here)</td>
+				</tr>
+			</table>
+			<br>
+			<table id="standardOrders">
+				<tr>
+					<th>Biller Division</th>
+					<th>Re-Age code</th>
+					<th>Adjustment Code</th>
+				</tr>
+				<tr>
+					<td>Brighthouse</td>
+					<td>95</td>
+					<td>1210</td>
+				</tr>
+				<tr>
+					<td>East</td>
+					<td>75000</td>
+					<td>1210</td>
+				</tr>
+				<tr>
+					<th>Biller Division</th>
+					<th>Adjustment Type</th>
+					<th>Reason Code</th>
+				</tr>
+				<tr>
+					<td>CSG</td>
+					<td>256 if active<br />280 if former</td>
+					<td>V3</td>
+				</tr>
+			</table>
+		</div>
+		<div class="column">
+			<h2>Escalation buckets and reasons</h2>
+			<table id="standardOrders">
+			<tr>
+				<th>Bucket Name</th>
+				<th>Reason to Escalate</th>
+			</tr>
+			<tr>
+				<td>Billing TMS</td>
+				<td>This bucket is for accounts that have had Billing TMS tickets submitted due to stuck orders. Include the ticket number in your escalation.</td>
+			</tr>
+			<tr>
+				<td>PAC UCM</td>
+				<td>This bucket is for accounts that have had PAC UCM tickets submitted due to stuck <u>COS or Install</u> orders. Include the ticket number in your escalation.</td>
+			</tr>
+			<tr>
+				<td>Commercial</td>
+				<td>This bucket is for accounts that are commerial accounts</td>
+			</tr>
+			<tr>
+				<td>Future Bill</td>
+				<td>This bucket is for accounts that have orders that are future billed that cannot be canceled or completed until their bill date. <u><b>This is to be used if the date is over 30 days out, or if the account has already been future billed in TARRMS at least once before</u></b></td>
+			</tr>
+
+			<tr>
+				<td>InHouse</td>
+				<td>This bucket is for Spectrum In-House accounts.</td>
+			</tr>
+			<tr>
+				<td>ISP05E SERVICES NEED MORE EQ</td>
+				<td>This bucket is for accounts that have "needs more equipment" issues that are unable to be remedied with placeholders or outlet corrections.</td>
+			</tr>
+			<tr>
+				<td>New Issue Pending Research</td>
+				<td><u><b>This bucket is only to be escalated to when directed to by a member of leadership.</u></b><br />This bucket is for issues in need of further research.  Include the name of the leader who directed you to escalate to this bucket.</td>
+			</tr>
+
+			</table>
+			
+			<h2>Equipment Placeholders</h2>
+			<table id="standardOrders" style="width:100%">
+			<tr>
+				<th>Service</th>
+				<th>Placeholder Code</th>
+			</tr>
+			<tr>
+				<td>Cable</td>
+				<td>N<br />RN<br />RTN V</td>
+			</tr>
+			<tr>
+				<td>Internet</td>
+				<td>HN<br />
+					RP<br />
+					Rtn Modem plc<br />
+					ET Z9 - FAKE Resi eMTA1 Modem w AWG<br />
+
+			</td>
+			</tr>
+			<tr>
+				<td>Wifi</td>
+				<td>Wifi Placehlder<br />
+				Rtn Router plc<br />
+				ET Z6 - FAKE AP EQP Access Point<br />
+				ET Z7 - FAKE WIFI POD Wifi Pods(LA775)<br />
+				</td>
+			</tr>
+			<tr>
+				<td>Phone</td>
+				<td>TN<br />TP<br />WI (Ohio)<br />PRI Placeholder<br />Rtn Phone Plc</td>
+			</tr>
+			<tr>
+				<td>Other</td>
+				<td>Misc Cat 05 Ph<br />RR Dummy<br />
+				ET Z0 - FAKE Resi eMTA2 Phone only Modem</td>
+				
+			</tr>
+			</div>
+		</div>
+	</body>
+</html>
