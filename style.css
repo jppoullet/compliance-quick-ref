@@ -264,7 +264,7 @@ input[type="button"]:active {
 
 .reminder-note {
   display: flex;
-  justify-content: flex-start;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -274,6 +274,13 @@ input[type="button"]:active {
 
 .how-to-layout-container a:hover {
   color: var(--clr-medium);
+}
+
+.h2-how-to-style::after {
+  content: "";
+  background-color: var(--clr-dark);
+  display: block;
+  height: 3px;
 }
 
 img {
