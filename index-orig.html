@@ -1,27 +1,86 @@
-<!DOCTYPE html> 
-<html>
-	<head>
-		<title>Quick Reference - Credit Services - Compliance</title>
-		<script type="text/javascript">
-			function changeText2(){
-				var userInput = document.getElementById('userInput').value;
-				var lnk = document.getElementById('lnk');
-				window.open("https://tms.corp.chartercom.com/Task/DetailRO/" + userInput);
-			}
-			function changeText3(){
-				var userInput = document.getElementById('userInput2').value;
-				var lnk = document.getElementById('lnk2');
-				window.open("https://issuetrak.twcable.com/SPA/#/issue/update/" + userInput);
-			}
-			function changeText4(){
-				var userInput = document.getElementById('userInput3').value;
-				var lnk = document.getElementById('lnk3');
-				window.open("https://jira.charter.com/browse/" + userInput);
-			}
-		</script>
-		<link rel="stylesheet" href="CSS/style.css">
-	</head>
-	<body style="background-color:#f5f5f5">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Compliance Quick Ref</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="container">
+	
+	<div class="sideBar">
+		<!-- <iframe style="border:none; position:fixed; top:0px; right:1px" src="main.html" height="100%" width="79%" align="right" name="howtos"></iframe> -->
+		<h1>26 days from today is:</h1>
+		<p id="discoDate"></p>
+		
+		<h1><a href="main.html" target="howtos">Tools and Notes</a></h1>
+		<h1>How to documents</h1>
+		<h3><a href="\\mwrfnp01\shared$\MWR CC Employees\2020\Credit Services\Compliance\How-To\" target="howtos">All How Tos (How-To Folder)</a></h3>
+		<h2>Recent Error workarounds</h2>
+		<ul>
+		<li>8-12-2022</li>
+		<li>As a reminder,  In-House accounts (test/store/hub)<br />No Credit - No NPD cancel<br />Only Escalate to In-House <br />Employee accounts are handled BAU</li>
+		<li><br /></li>
+		<li>9-15-2022</li>
+		<li><a href="All Billers/Billing JIRA Ticket Creation/JIRA Ticket Creation for Collections Support.pdf" target="howtos">JIRA Ticket Creation for Collections Support</a></li>
+		<li><br /></li>
+		<li>10-07-2022</li>
+		<li><a href="ACP/ACP Day 76/CSG - HSD Only - EBB Downgrade 76 Day.pdf" target="howtos">HSD Only - EBB Downgrade 76 Day</a></li>
+		<li><a href="ACP/ACP Day 76/CSG - Voice Non Protected - EBB Downgrade 76 Day.pdf" target="howtos">Voice Non Protected - EBB Downgrade 76 Day</a></li>
+		<li><a href="ACP/ACP Day 76/CSG - Voice Protected - EBB Downgrade 120 Day.pdf" target="howtos">Voice Protected - EBB Downgrade 120 Day</a></li>
+		</ul>
+		<h2>All Billers</h2>
+		<ul>
+			<!--<li><h4><a href="ACP/ACPMain.html" target="howtos">ACP Day 76 - Notes and how-tos</a></h4></li> -->
+			<li><a href="All Billers/Billing JIRA Ticket Creation/JIRA Ticket Creation for Collections Support.pdf" target="howtos">JIRA Ticket Creation for Collections Support</a></li>
+			<li><a href="All Billers/High Balance/High Balance Review.pdf" target="howtos">High Balance Handling</a></li>
+		</ul>
+		<h2><a href="ICOMS/ICOMSMain.html" target="howtos">ICOMS</a></h2>
+		<ul>
+			<li><a href="ICOMS/Change Customer Type.pdf" target="howtos">Change Customer Type</a></li>
+		</ul>
+		<h4>Open DI</h4>
+		<ul>
+			<li><a href="ICOMS/OpenDI/openDiHowTo.html" target="howtos">Open DI How-To</a></li>
+		</ul>
+		<h4>EBB downgrades</h4>
+		<ul>		
+			<!--<li><a href="ICOMS/EBBDowngrades/ICOMS EBB 76 Day HSD Only Downgrade.pdf" target="howtos">EBB 76 Day - HSD Only Downgrade</a></li>-->
+			<!--<li><a href="ICOMS/EBBDowngrades/ICOMS EBB 76 Downgrades - Single, Double, Triple 1.pdf" target="howtos">EBB 76 Day - Single, Double Triple Play</a></li>-->
+			<li><a href="ACP/ACP Day 76/CSG - HSD Only - EBB Downgrade 76 Day.pdf" target="howtos">HSD Only - EBB Downgrade 76 Day</a></li>
+			<li><a href="ACP/ACP Day 76/CSG - Voice Non Protected - EBB Downgrade 76 Day.pdf" target="howtos">Voice Non Protected - EBB Downgrade 76 Day</a></li>
+			<li><a href="ACP/ACP Day 76/CSG - Voice Protected - EBB Downgrade 120 Day.pdf" target="howtos">Voice Protected - EBB Downgrade 120 Day</a></li>
+		</ul>
+		<h2><a href="CSG/CSGMain.html" target="howtos">CSG</a></h2>
+		<h4>Error Handling How-tos</h4>
+		<ul>
+			<li><a href="CSG/SODI handling/PAC UCM + SODI Handling checklist.pdf" target="howtos">How to handle SODI issues in CSG</a><a href="CSG/SODI handling/sodi flowchart.pdf" target="howtos">   (flowchart)</a></li>
+			<li><a href="CSG/Tax ID change/TAX ID Change.pdf" target="howtos">How to resolve Tax ID errors</a></li>
+
+		</ul>
+		<h4>EBB/ACP Downgrades</h4>
+		<ul>
+			<li><a href="CSG/EBBDowngrades/CSG - HSD Only - EBB Downgrade 76 Day.pdf" target="howtos">EBB 76 Day - Single, Double Triple Play Processes</a></li>
+			<li><a href="ACP\ACP Day 76/ACP Prequal Seasonal End + Dunning Update Process.pdf" target="howtos">ACP Prequal Seasonal End + Dunning Update </a></li>
+		</ul>
+		<h4>Open DI</h4>
+		<ul>
+			<li><a href="CSG/OpenDI/CSG Open DI How-To.pdf" target="howtos">Open DI How-To</a></li>
+		</ul>
+		<h4>LOB Unservicable</h4>
+		<ul>
+			<li><a href="CSG/LOB Unserviceable/LOB Unserviceable.pdf" target="howtos">Clear LOB Unserviceable Error</a></li>
+		</ul>
+		
+		<h3>Special Handling</h3>
+		<ul>
+			<li><a href="dunningGroupList.html" target="howtos">Dunning Group list</a></li>
+		</ul>
+		<h3>Standardized emails</h3>
+	</div>
+
+	<div class="mainContent">
 		<h1>Credit Services Compliance - Tools Reference Site</h1>
 		<p>This file can be found at \\mwrfnp01\shared$\MWR CC Employees\2022\Credit Services\Compliance\Quick-Refrence site\index.html</p>
 		<h2>Tools and useful links</h2>
@@ -33,14 +92,14 @@
 				<td><a target="_blank" href="https://sharepoint.charter.com/corp/TWCPaymentServices/Compliance/Forms/AllItems.aspx?RootFolder=%2Fcorp%2FTWCPaymentServices%2FCompliance%2FAudit%20Team&FolderCTID=0x01200014CBD2457C39FB4D923CD499D4EE2055&View=%7B13FBFD42-4E23-4EA5-9443-A916316022E3%7D#InplviewHash13fbfd42-4e23-4ea5-9443-a916316022e3=FolderCTID%3D0x01200014CBD2457C39FB4D923CD499D4EE2055-RootFolder%3D%252Fcorp%252FTWCPaymentServices%252FCompliance%252FAudit%2520Team-SortField%3DLinkFilename-SortDir%3DAsc">TARRMS</a></td>
 				<td><a target="_blank" href="https://panorama.charter.com/content/panorama/en/app/talent-center.html">Talent Center</a></td>
 			</tr>
-			<tr />
+			<tr>
 			<tr>
 				<td></td>
 				<td><a target="_blank" href="https://uxid.corp.chartercom.com/">Agent Lookup (UXID)</a></td>
 				<td><a target="_blank" href="https://etsl1.twcable.com/whiteboard">Outage Board (Whiteboard)</a></td>
 				<td><a target="_blank" href="https://charterukm.custhelp.com/">Co-Pilot</a></td>
 				<td><a target="_blank" href="http://colsmfv.com/">Food truck Calendar</a></td>
-				<td />
+				<td>
 			</tr>
 			<tr>
 				<th>Ticketing Systems</th>
@@ -202,12 +261,12 @@
 			</tr>
 			<tr>
 				<td>Future Bill</td>
-				<td>This bucket is for accounts that have orders that are future billed that cannot be canceled or completed until their bill date. <u><b>This is to be used if the date is over 30 days out, or if the account has already been future billed in TARRMS at least once before</u></b></td>
+				<td>This bucket is for accounts that have orders that are future billed that cannot be canceled or completed until their bill date. <u>This is to be used if the date is over 30 days out, or if the account has already been future billed in TARRMS at least once before</u></td>
 			</tr>
 
 			<tr>
 				<td>InHouse</td>
-				<td>This bucket is for Spectrum In-House accounts. - <b><u>Do not credit, cancel NPDs or otherwise modify the account before escalating. This bucket is NOT for employee accounts. Employee accounts should be worked BAU. </b></u></td>
+				<td>This bucket is for Spectrum In-House accounts. - <u>Do not credit, cancel NPDs or otherwise modify the account before escalating. This bucket is NOT for employee accounts. Employee accounts should be worked BAU. </u></td>
 			</tr>
 			<tr>
 				<td>ISP05E SERVICES NEED MORE EQ</td>
@@ -215,12 +274,12 @@
 			</tr>
 			<tr>
 				<td>New Issue Pending Research</td>
-				<td><u><b>This bucket is only to be escalated to when directed to by a member of leadership.</u></b><br />This bucket is for issues in need of further research.  Include the name of the leader who directed you to escalate to this bucket.</td>
+				<td><u>This bucket is only to be escalated to when directed to by a member of leadership.</u><br />This bucket is for issues in need of further research.  Include the name of the leader who directed you to escalate to this bucket.</td>
 			</tr>
 			</table>
 			<br>
 			<h2><a href="https://charterukm.custhelp.com/app/answers/answer_view/a_id/1011887">Equipment Placeholders</a></h2>
-			<table id="standardOrders" style="width:100%">
+			<table id="standardOrders">
 			<tr>
 				<th>Service</th>
 				<th>Placeholder Code</th>
@@ -284,5 +343,8 @@
 		</div>
 		<center><h3><u>Identifying if an account is SIA Eligible</u></h3><img src="Images/Identify SIA eligible.png"></img></center>
 
+	</div>
+
 	</body>
+	<script src="script.js"></script>
 </html>
