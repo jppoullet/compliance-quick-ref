@@ -53,6 +53,14 @@ header h1 {
   font-size: 1.5em;
 }
 
+header h1 a {
+  color: var(--background-color);
+}
+
+header h1 a:hover {
+  color: var(--clr-light-blue);
+}
+
 /* Navigation */
 
 nav {
@@ -140,6 +148,30 @@ nav {
 
 .tools-dropdown a:hover::after {
   transform: scale(0, 1);
+}
+
+/* Sidebar Navigation */
+
+.sidenav {
+  position: fixed;
+  z-index: 1;
+  background-color: var(--clr-light-blue);
+  top: 150px;
+  left: 7px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.sidenav a {
+  color: var(--background-color);
+  display: block;
+  margin: 10px 0 10px;
+  padding: 5px 10px;
+  /* border-bottom: 1px solid black; */
+  text-align: center;
+}
+
+.sidenav a:hover {
+  color: var(--clr-dark);
 }
 
 /* Main content of page */
@@ -239,17 +271,23 @@ input[type="button"]:active {
 }
 
 .content-container {
+  margin: 40px 100px 40px 250px;
+}
+
+.content-container h2 {
+  margin-top: 70px;
+}
+
+.discodate-ticket-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  margin: 40px 40px;
 }
 
 .adjustment-codes-h2 {
   margin-top: 20px;
 }
 
-/* How to Docouments Page */
+/* How to Documents Page */
 
 .how-to-container {
   display: flex;
@@ -258,8 +296,15 @@ input[type="button"]:active {
   margin: 40px 40px;
 }
 
+.how-to-content-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 40px 40px;
+  gap: 40px;
+}
+
 .how-to-layout-container li {
-  margin: 7px;
+  margin: 7px 0;
 }
 
 .reminder-note {

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <header>
-    <h1>Compliance Quick Ref</h1>
+    <h1><a href="index.html">Compliance Quick Ref</a></h1>
     <nav>
       <ul class="main-nav">
         <li><a href="index.html">Home</a></li>
@@ -23,7 +23,7 @@
                 <a
                   target="_blank"
                   href="https://agent-os.prod.portal.charter.com/"
-                  >Agent OS</a
+                  >Gateway Agent OS</a
                 >
               </li>
               <li>
@@ -83,6 +83,14 @@
     </nav>
   </header>
   <body>
+    <div class="sidenav">
+      <a href="#standard-notes">Standardized Notes</a>
+      <a href="#senior-notes">Senior Only Notes</a>
+      <a href="#acp-notes">ACP Downgrade Notation</a>
+      <a href="#escalations">Escalation Buckets and Reasons</a>
+      <a href="#eqp">Equipment Placeholders</a>
+      <a href="#adjustment-codes">Adjustment Codes</a>
+    </div>
     <main class="layout-container">
       <div class="links-container">
         <ul class="links-tools">
@@ -96,7 +104,13 @@
               >Kronos</a
             >
           </li>
-          <li><a href="#" target="_blank">TARRMS</a></li>
+          <li>
+            <a
+              href="https://chartercom.sharepoint.com/sites/TWCPaymentServices/Compliance/Forms/AllItems.aspx?viewpath=%2Fsites%2FTWCPaymentServices%2FCompliance%2FForms%2FAllItems%2Easpx&id=%2Fsites%2FTWCPaymentServices%2FCompliance%2FAudit%20Team&viewid=279d7d7f%2Dfe0e%2D42b5%2Da1d9%2D9527ba713ab8"
+              target="_blank"
+              >TARRMS</a
+            >
+          </li>
           <li>
             <a href="https://charterukm.custhelp.com/" target="_blank"
               >Co-Pilot</a
@@ -127,44 +141,54 @@
           </li>
         </ul>
       </div>
+
       <div class="content-container">
-        <div class="schedule-date">
-          Schedule Disconnect Date
-          <p id="discoDate"></p>
+        <div class="discodate-ticket-container">
+          <div class="schedule-date">
+            Schedule Disconnect Date
+            <p id="discoDate"></p>
+          </div>
+
+          <!-- Ticketing System Search and Links -->
+          <div class="ticketing-systems">
+            <label
+              ><a
+                href="https://tms.corp.chartercom.com/Dashboard"
+                target="_blank"
+                >TMS</a
+              >
+              <input type="text" id="tms" value="" />
+              <input type="button" onclick="tmsSearch()" value="Search TMS" />
+            </label>
+
+            <label
+              ><a
+                href="https://issuetrak.twcable.com/SPA/#/issue/customer/find"
+                target="_blank"
+                >UCM</a
+              >
+              <input type="text" id="ucm" value="" />
+              <input type="button" onclick="ucmSearch()" value="Search UCM" />
+            </label>
+
+            <label
+              ><a
+                href="https://jira.charter.com/secure/Dashboard.jspa"
+                target="_blank"
+                >JIRA</a
+              >
+              <input type="text" id="jira" value="" />
+              <input type="button" onclick="jiraSearch()" value="Search JIRA" />
+            </label>
+
+            <a target="_blank" href="https://ecaf.spctrm.net/index.html"
+              >ECAF</a
+            >
+          </div>
         </div>
-        <div class="ticketing-systems">
-          <label
-            ><a href="https://tms.corp.chartercom.com/Dashboard" target="_blank"
-              >TMS</a
-            >
-            <input type="text" id="tms" value="" />
-            <input type="button" onclick="tmsSearch()" value="Search TMS" />
-          </label>
 
-          <label
-            ><a
-              href="https://issuetrak.twcable.com/SPA/#/issue/customer/find"
-              target="_blank"
-              >UCM</a
-            >
-            <input type="text" id="ucm" value="" />
-            <input type="button" onclick="ucmSearch()" value="Search UCM" />
-          </label>
-
-          <label
-            ><a
-              href="https://jira.charter.com/secure/Dashboard.jspa"
-              target="_blank"
-              >JIRA</a
-            >
-            <input type="text" id="jira" value="" />
-            <input type="button" onclick="jiraSearch()" value="Search JIRA" />
-          </label>
-
-          <a target="_blank" href="https://ecaf.spctrm.net/index.html">ECAF</a>
-        </div>
-
-        <div>
+        <!-- Standarized Notation -->
+        <div id="standard-notes">
           <h2>Standard Order Notes</h2>
           <table class="standard-notes-table">
             <tr>
@@ -205,7 +229,7 @@
               <td>OPEN DI (And DI-current)</td>
               <td>----</td>
               <td class="note">
-                COMPLIANCE BACKLOG: COMPLETE PENDING DISCO<br /><br />**Compliance:
+                COMPLIANCE BACKLOG: COMPLETED PENDING DISCO<br /><br />**Compliance:
                 Attempted reflow to close order**
               </td>
             </tr>
@@ -213,7 +237,7 @@
               <td>OPEN NP</td>
               <td>----</td>
               <td class="note">
-                COMPLIANCE BACKLOG: COMPLETE PENDING DISCO<br /><br />**Compliance:
+                COMPLIANCE BACKLOG: COMPLETED PENDING DISCO<br /><br />**Compliance:
                 Attempted reflow to close order**
               </td>
             </tr>
@@ -226,7 +250,28 @@
             </tr>
           </table>
         </div>
-        <div>
+
+        <!-- Senior Notes -->
+        <div id="senior-notes">
+          <h2>Senior ONLY Notes</h2>
+          <table class="acp-notation-table">
+            <tr>
+              <th>Category</th>
+              <th>Note</th>
+            </tr>
+            <tr>
+              <td>Commercial Hierarchy Accounts</td>
+              <td>
+                COMPLIANCE: MASTER ACCT ******* IS ** DAYS PAST DUE AND NPD
+                NEEDS COMPLETED. COMPLETING NPD ON LEAF ******* / ******** SO
+                THAT MASTER ACCT CAN BE RESOLVED.
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- ACP Notes -->
+        <div id="acp-notes">
           <h2>ACP Downgrade Standard Notation</h2>
           <table class="acp-notation-table">
             <tr>
@@ -306,7 +351,9 @@
             </tr>
           </table>
         </div>
-        <div class="escalations">
+
+        <!-- Escalations Notes -->
+        <div class="escalations" id="escalations">
           <h2>Escalation buckets and reasons</h2>
           <table class="escalations-table">
             <tr>
@@ -392,7 +439,9 @@
             </tr>
           </table>
         </div>
-        <div class="placeholders-container">
+
+        <!-- Equipment Placeholders -->
+        <div id="eqp" class="placeholders-container">
           <h2>Equipment Placeholder Codes</h2>
           <table class="placesholders-table">
             <tr>
@@ -436,7 +485,11 @@
               </td>
             </tr>
           </table>
-          <h2 class="adjustment-codes-h2">Adjustment Codes</h2>
+        </div>
+
+        <!-- Biller Adjustment Codes -->
+        <div id="adjustment-codes">
+          <h2>Adjustment Codes</h2>
           <table id="standardOrders">
             <tr>
               <th>Biller Division</th>
